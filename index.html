@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+            </nav>
+            <div class="header-text">
+                <p> UI/UX Designer </p>
+                <h1> Hi ,I'm <span>Selvin Jerald</span> <br>From India </h1>
+
+            </div>
+        </div>
+    </div>
+   <!-- < -------------abpout------------> 
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/person1.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Lorem ipsum, dolor sit amet  
+                        laboriosam rem sequi doloremquaepe perferendis velit, voluptatibus officia reiciendis numquam nam laudantium incidunt alias consectetur eaque asperiores? Ratione voluptas sed, modi quod omnis, harum, aperiam labore vero reiciendis officia similique aut accusantium incidunt vel dolor sunt earum quae pariatur minus est neque natus hic? Ipsam, odit? Aperiam non obcaecati qui quae tempore, molestias consequatur necessitatibus laborum omnis saepe sit placeat velit aut reiciendis enim ipsam dolores autem iste numquam est harum asperiores sequi perspiciatis! Iusto dolores odit tenetur laudantium quos consectetur dolorum assumenda voluptate atque aut veritatis quas quae, animi minus odio officia facilis a, solu</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')" > Skills</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Core Java</span></li>
+                            <li><span>J2EE</span></li>
+                            <li><span>Springboot</span></li>
+
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2022</span><br> Jeppiaar Engineering College </li>
+                            <li><span>2017-2018</span><br> Holy Infant Jesus Matriculation Hr Sec School </li>
+                            <li><span>2016-2017</span> <br> Kendriya Vidhalaya Air Force Avadi </li>
+
+                        </ul>
+                     </div>
+                     <div class="tab-contents">
+                        <ul>
+                            <li><span>Core Java</span></li>
+                            <li><span>J2EE</span></li>
+                            <li><span>Springboot</span></li>
+
+                        </ul>
+                     </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">MY WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_1280.jpg" alt="">
+                   <div class="layer">
+                    <h3>Blood Donation Management System </h3>
+                    <p> This Website is used to connect people </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div> 
+                </div>
+                <div class="work">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" alt="">
+                    <div class="layer">
+                        <h3>Blood Donation Management System </h3>
+                        <p> This Website is used to connect people </p>
+                        <a href="index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                       </div> 
+                </div>
+                <div class="work">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg" alt="">
+                    <div class="layer">
+                        <h3>Blood Donation Management System </h3>
+                        <p> This Website is used to connect people </p>
+                       </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+   <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+}
+   </script>
+</body>
+</html>
